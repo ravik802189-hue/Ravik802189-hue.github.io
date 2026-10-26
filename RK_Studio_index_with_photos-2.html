@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RK Studio | Wedding Photography</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#050505;color:#fff;font-family:Georgia,serif}
+nav{padding:18px 6%;border-bottom:1px solid #80602a;display:flex;justify-content:space-between}
+.logo{color:#d9ad55;font-size:25px;letter-spacing:4px;font-weight:bold}
+.hero{padding:90px 7%;min-height:560px;background:radial-gradient(circle at 75%,#4a3012,#050505 55%)}
+.gold{color:#d9ad55}h1{font-size:70px;margin:20px 0 5px}h2{text-align:center;font-size:42px}
+section{padding:65px 7%;max-width:1200px;margin:auto}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{padding:28px;border:1px solid #80602a;border-radius:14px;background:#100d08;text-align:center}.price{font-size:32px;color:#d9ad55;margin:15px}
+.btn{display:inline-block;padding:15px 22px;border:1px solid #d9ad55;color:#d9ad55;text-decoration:none;margin-top:20px}
+.booking{max-width:700px;margin:auto;border:1px solid #80602a;padding:25px;border-radius:14px}
+input,select,textarea{width:100%;padding:14px;margin:7px 0 16px;background:#0b0b0b;color:white;border:1px solid #555;border-radius:7px}
+button{width:100%;padding:15px;background:#d9ad55;border:0;border-radius:7px;font-weight:bold}
+@media(max-width:700px){.cards{grid-template-columns:1fr}h1{font-size:52px}}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
+.gallery img{width:100%;height:330px;object-fit:cover;border-radius:14px;border:1px solid #80602a}
+@media(max-width:700px){.gallery{grid-template-columns:1fr}.gallery img{height:380px}}
+</style>
+</head>
+<body>
+<nav><div class="logo">RK STUDIO</div><div class="gold">8435772887</div></nav>
+<div class="hero"><div class="gold">LUXURY WEDDING PHOTOGRAPHY</div><h1>We Capture<br>Emotions.</h1><p>Premium Wedding Photography & Videography · Ashoknagar</p><a class="btn" href="tel:8435772887">CALL 8435772887</a></div>
+<section><div class="gold" style="text-align:center;letter-spacing:3px">OUR PACKAGES</div><h2>Choose Your Experience</h2><div class="cards">
+<div class="card"><h3>WEDDING PHOTOGRAPHY</h3><div class="price">₹15,000+</div><p>Premium wedding coverage<br>Edited photographs</p></div>
+<div class="card"><h3>PRE-WEDDING</h3><div class="price">₹40,000+</div><p>Cinematic couple shoot<br>Premium editing</p></div>
+<div class="card"><h3>DRONE SHOOT</h3><div class="price">₹25,000</div><p>Separate drone package<br>Aerial cinematic coverage</p></div>
+</div></section>
+
+<section id="gallery">
+<div class="gold" style="text-align:center;letter-spacing:3px">PORTFOLIO</div>
+<h2>Premium Wedding Gallery</h2>
+<div class="gallery"><img src="https://images.pexels.com/photos/27273675/pexels-photo-27273675.jpeg?cs=srgb&dl=pexels-kolkatarchobiwala-27273675.jpg&fm=jpg" alt="Wedding photo sample" loading="lazy"><img src="https://images.pexels.com/photos/20592003/pexels-photo-20592003.jpeg?cs=srgb&dl=pexels-petrit-daku-993693529-20592003.jpg&fm=jpg" alt="Wedding photo sample" loading="lazy"><img src="https://images.pexels.com/photos/27876573/pexels-photo-27876573.jpeg?cs=srgb&dl=pexels-kewal-nagda-1669654142-27876573.jpg&fm=jpg" alt="Wedding photo sample" loading="lazy"></div>
+<p style="text-align:center;color:#888;font:13px Arial">Sample wedding photos — later we can replace these with your own RK Studio photos.</p>
+</section>
+
+<section><div class="gold" style="text-align:center">BOOK YOUR DATE</div><h2>Check Availability</h2><div class="booking"><form onsubmit="send();return false">
+<label>Name</label><input id="n" required><label>Mobile</label><input id="p" required><label>Event Date</label><input id="d" type="date" required><label>Service</label><select id="s"><option>Wedding Photography — ₹15,000+</option><option>Pre-Wedding — ₹40,000+</option><option>Drone Shoot — ₹25,000</option></select><label>Details</label><textarea id="m"></textarea><button>SEND BOOKING REQUEST ON WHATSAPP</button></form></div></section>
+<section style="text-align:center"><h2>RK Studio</h2><p>Ashoknagar · Wedding Photography & Videography</p><a class="btn" href="tel:8435772887">8435772887</a></section>
+<script>
+function send(){let t=`RK Studio Booking Request%0AName: ${n.value}%0AMobile: ${p.value}%0ADate: ${d.value}%0AService: ${s.value}%0ADetails: ${m.value}`;location.href='https://wa.me/918435772887?text='+encodeURIComponent(t)}
+d.min=new Date().toISOString().split('T')[0];
+</script>
+</body></html>
